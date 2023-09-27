@@ -1,0 +1,12 @@
+
+{
+    "custom_rules": {
+      "mutually_exclusive_fields": {
+        "home_phone": ["cell_phone", "work_phone"],
+        "cell_phone": ["home_phone", "work_phone"],
+        "work_phone": ["home_phone", "cell_phone"],
+        "birth_date": ["govt_id_number"],
+        "govt_id_number": ["birth_date"]
+      }
+    }
+  }

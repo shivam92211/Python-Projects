@@ -1,0 +1,62 @@
+
+
+{
+
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "home_phone": {
+        "type": "string"
+      },
+      "cell_phone": {
+        "type": "string"
+      },
+      "work_phone": {
+        "type": "string"
+      },
+      "birth_date": {
+        "type": "string"
+      },
+      "govt_id_number": {
+        "type": "string"
+      },
+      "day": {
+        "type": "string",
+        "enum": ["SU", "MO", "TU", "WE", "TH", "FR", "SA"]
+      }
+    },
+
+
+    "required": ["id", "name"],
+
+    "anyOf": [
+      {
+        "required": ["home_phone", "cell_phone", "work_phone"]
+      },
+      {
+        "required": ["birth_date", "govt_id_number"]
+      },
+
+      {
+        "properties": {
+          "birth_date": { "type": "string" }
+        }
+      },
+      {
+        "properties": {
+          "govt_id_number": { "type": "string" }
+        }
+      }
+    ]
+    
+      
+  }
+  
+  
