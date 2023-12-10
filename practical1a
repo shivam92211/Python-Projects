@@ -1,0 +1,79 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNGC71fFh287RZXFdemwBsn",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/shivam92211/Python-Projects/blob/main/practical1a\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "syKI-N3LCReI",
+        "outputId": "88cb0c27-8fe9-4ced-f84e-056e48a19348"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the value of x :2\n",
+            "Enter the value of w :3\n",
+            "Enter the value of b :4\n",
+            "net= 10\n",
+            "output= 1\n"
+          ]
+        }
+      ],
+      "source": [
+        "x=float(input(\"Enter the value of x :\"))\n",
+        "w=float(input(\"Enter the value of w :\"))\n",
+        "b=float(input(\"Enter the value of b :\"))\n",
+        "\n",
+        "net = int(w*x+b)\n",
+        "if (net<0):\n",
+        "  out=0\n",
+        "elif((net>=0)&(net<=1)):\n",
+        "  out = net\n",
+        "else:\n",
+        "  out=1\n",
+        "\n",
+        "print(\"net=\", net)\n",
+        "print(\"output=\", out)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "yEpaAZdtCuAv"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
